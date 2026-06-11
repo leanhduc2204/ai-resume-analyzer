@@ -130,7 +130,7 @@ const Details: FC<DetailsProps> = ({ feedback }) => {
             </AccordionHeader>
             <AccordionContent itemId={s.key}>
               <div className="mt-2">
-                <CategoryContent tips={s.data.tips ?? []} />
+                <CategoryContent tips={s.data.tips} />
               </div>
             </AccordionContent>
           </AccordionItem>
