@@ -1,11 +1,18 @@
 import { useState, type SubmitEvent } from "react";
+import { useNavigate } from "react-router";
 import FileUploader from "~/components/FileUploader";
 import Navbar from "~/components/Navbar";
 import { convertPdfToImage } from "~/lib/pdf2image";
 import { usePuterStore } from "~/lib/puter";
 import { generateUUID } from "~/lib/utils";
 import { prepareInstructions } from "../../constants";
-import { useNavigate } from "react-router";
+
+export const meta = () => {
+  return [
+    { title: "Resumind | Upload" },
+    { name: "description", content: "Upload your resume" },
+  ];
+};
 
 const Upload = () => {
   const { ai, fs, kv } = usePuterStore();
