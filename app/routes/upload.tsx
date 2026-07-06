@@ -9,7 +9,7 @@ import { prepareInstructions } from "../../constants";
 
 export const meta = () => {
   return [
-    { title: "Resumind | Upload" },
+    { title: "ResumeLens | Upload" },
     { name: "description", content: "Upload your resume" },
   ];
 };
